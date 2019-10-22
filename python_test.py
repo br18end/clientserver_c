@@ -28,9 +28,9 @@ class CarriotsMqttClient():
 
 
 if __name__ == '__main__':
-    auth = {'username': 'd93c05fc6da4a2473ab7ca0d5ea15ef7408eea4bcfc4f13853282aa2ee1e6ae8', 'password': ''}
+    auth = {'username': 'user', 'password': ''}
     # tls_dict = {'ca_certs': 'ca_certs.crt', 'tls_version': PROTOCOL_TLSv1}  # ssl version
-    msg_dict = {'protocol': 'v2', 'device': 'newDevice@Agroiotec.Agroiotec', 'at': 'now', 'data': {'temp': 21, 'hum':58}}
+    msg_dict = {'protocol': 'v2', 'device': 'newDevice@user.user', 'at': 'now', 'data': {'temp': 21, 'hum':58}}
     client_mqtt = CarriotsMqttClient(auth=auth)                     # non ssl version
     # client_mqtt = CarriotsMqttClient(auth=auth, tls=tls_dict)      # ssl version
     client_mqtt.publish(dumps(msg_dict))

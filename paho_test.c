@@ -5,11 +5,11 @@
 
 #define ADDRESS     "mqtt.carriots.com:1883"
 #define CLIENTID    "streams"
-#define TOPIC       "d93c05fc6da4a2473ab7ca0d5ea15ef7408eea4bcfc4f13853282aa2ee1e6ae8/streams"
-#define PAYLOAD     "{\"protocol\": \"v2\", \"at\": \"now\", \"device\": \"newDevice@Agroiotec.Agroiotec\", \"data\": null }"
+#define TOPIC       "topic/streams"
+#define PAYLOAD     "{\"protocol\": \"v2\", \"at\": \"now\", \"device\": \"newDevice@user.user\", \"data\": null }"
 #define QOS         0
 #define TIMEOUT     10000L
-#define USERNAME "d93c05fc6da4a2473ab7ca0d5ea15ef7408eea4bcfc4f13853282aa2ee1e6ae8"
+#define USERNAME ""
 #define PASSWORD ""
 
 int main(int argc, char* argv[]){
